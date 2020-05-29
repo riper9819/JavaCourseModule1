@@ -4,6 +4,10 @@ import java.util.List;
 import java.util.Arrays;
 import java.nio.charset.StandardCharsets;
 
+/************************************
+***   Created by Bohdan Mandych   ***
+************************************/
+
 class Main {
     public static void main(String[] args) throws Exception {
         //Creating
@@ -14,6 +18,8 @@ class Main {
 
         //removing incorect spaces
         text = text.replaceAll("\\s+", " ");
+
+        //finding longest word
         String[] words = text.split(" ");
         String longest = "";
         for (int i = 0; i < words.length; i++){
