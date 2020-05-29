@@ -10,7 +10,7 @@ import java.nio.charset.StandardCharsets;
 
 class Main {
     public static void main(String[] args) throws Exception {
-        //Creating
+        //loading book text from file
         String text = new String (Files.readAllBytes(Paths.get("HarryPotter.txt")),StandardCharsets.UTF_8);
         text = text.replaceAll("\n", " ").
                 replaceAll("[.%,;?!@:№\"[0-9]]", "").
