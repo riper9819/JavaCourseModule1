@@ -16,7 +16,7 @@ class Main {
                 replaceAll("[.%,;?!@:№\"[0-9]]", "").
                 replaceAll("- ", "");
 
-        //removing incorect spaces
+        //removing incorrect spaces
         text = text.replaceAll("\\s+", " ");
 
         //finding longest word
@@ -72,7 +72,7 @@ class Main {
         //Results of calculations
         System.out.println("\n**************Results of calculations**************\n");
         System.out.println("There are " + intersections + " intersections in words hash.");
-        System.out.println("There are " + distincts.length() + " distinct words in text.");
+        System.out.println("There are " + distinctArray.length + " distinct words in text.");
         System.out.println("There are " + counter + " words \"Гаррі\" in text.");
         System.out.println("Longest word is: " + longest);
     }
