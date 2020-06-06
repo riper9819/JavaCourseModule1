@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 //Child class for Tent.java (Pyramid <- Tent <- OutdoorEquipmentTent)
+//This class represent objects of class Tent, that were sold exclusively by Outdoor Equipment company
 public class OutdoorEquipmentTent extends Tent {
     public int productID;
     public String usage;

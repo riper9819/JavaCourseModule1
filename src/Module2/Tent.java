@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 //Child class for Pyramid.java (Pyramid <- Tent)
+//This class represent objects of class Tent in general
 public class Tent extends Pyramid{
     public String material;
     public String color;
