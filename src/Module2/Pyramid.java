@@ -80,7 +80,7 @@ public class Pyramid {
         return (float) Math.toDegrees(Math.atan(this.height / this.getInnerRadius()));
     }
 
-    //Counting angle between edge of pyramid and side length
+    //Counting angle between sides of pyramid base
     public float getBaseAngleOfFace() {
         return (180 * ((this.sides - 2f) / this.sides));
     }
@@ -127,7 +127,7 @@ public class Pyramid {
                 "\nOuter Radius = " + getOuterRadius() + " cm" +
                 "\nEdge Angle = " + getEdgeAngle() + "°" +
                 "\nSlant Angle = " + getSlantAngle() + "°" +
-                "\nBase Angle Of Face= " + getBaseAngleOfFace() + "°";
+                "\nBase Angle = " + getBaseAngleOfFace() + "°";
     }
 
     //Method equals created for checking parameters equality
