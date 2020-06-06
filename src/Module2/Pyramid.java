@@ -7,7 +7,7 @@ import java.util.Objects;
 ************************************/
 
 // Class Pyramid is used for counting pyramid parameters
-public class Pyramid {
+public class Pyramid implements IPerimeter, IPackaging {
 
     //Variables declaration
     private int id;
@@ -114,12 +114,14 @@ public class Pyramid {
     @Override
     public String toString() {
         return  "-----Pyramid parameters-----" +
-                "\n\nSide a = " + this.sideA + " cm" +
-                "\nNumber of sides = " + this.sides + " cm" +
-                "\nHeight of pyramid = " + this.height + " cm" +
+                "\n\nSide a = " + getSideA() + " cm" +
+                "\nNumber of sides = " + getSides() + " cm" +
+                "\nHeight of pyramid = " + getHeight() + " cm" +
                 "\nEdge height = " + getEdgeHeight() + " cm" +
                 "\nApothem = " + getApothem() + " cm" +
-                "\nVelocity = " + getVolume() + " cm3" +
+                "\nVolume = " + getVolume() + " cm3" +
+                "\nBase perimeter = " + getBasePerimeter() +
+                "\nSide perimeter = " + getSidePerimeter() +
                 "\nBase Area = " + getBaseArea() + " cm2" +
                 "\nLateral Area = " + getSideArea() + " cm2" +
                 "\nSurface Area = " + getSurfaceArea() + " cm2" +
@@ -128,6 +130,77 @@ public class Pyramid {
                 "\nEdge Angle = " + getEdgeAngle() + "°" +
                 "\nSlant Angle = " + getSlantAngle() + "°" +
                 "\nBase Angle = " + getBaseAngle() + "°";
+    }
+
+    //Merging results into json string
+    @Override
+    public String toJSON() {
+        String json = "Pyramid{"
+                + "\""  + "sideA\":" + this.getSideA() + ","
+                + "\""  + "sides\":" + this.getSides() + ","
+                + "\""  + "height\":" + this.getHeight() + ","
+                + "\""  + "edgeHeight\":" + this.getEdgeHeight() + ","
+                + "\""  + "apothem\":" + this.getApothem() + ","
+                + "\""  + "volume\":" + this.getVolume() + ","
+                + "\""  + "basePerimeter\":" + this.getBasePerimeter() + ","
+                + "\""  + "sidePerimeter\":" + this.getSidePerimeter() + ","
+                + "\""  + "baseArea\":" + this.getBaseArea() + ","
+                + "\""  + "lateralArea\":" + this.getSideArea() + ","
+                + "\""  + "surfaceArea\":" + this.getSurfaceArea() + ","
+                + "\""  + "innerRadius\":" + this.getInnerRadius() + ","
+                + "\""  + "outerRadius\":" + this.getOuterRadius() + ","
+                + "\""  + "edgeAngle\":" + this.getEdgeAngle() + ","
+                + "\""  + "slantAngle\":" + this.getSlantAngle() + ","
+                + "\""  + "baseAngle\":" + this.getBaseAngle() + ","
+                + "}";
+        return json;
+    }
+
+    //Merging results into xml string
+    @Override
+    public String toXML() {
+
+        String xml = "<Pyramid>"
+                + "<sideA>" + this.getSideA() + "</sideA>"
+                + "<sides>" + this.getSides() + "</sides>"
+                + "<height>" + this.getHeight() + "</height>"
+                + "<edgeHeight>" + this.getEdgeHeight() + "</edgeHeight>"
+                + "<apothem>" + this.getApothem() + "</apothem>"
+                + "<volume>" + this.getVolume() + "</volume>"
+                + "<basePerimeter>" + this.getBasePerimeter() + "</basePerimeter>"
+                + "<sidePerimeter>" + this.getSidePerimeter() + "</sidePerimeter>"
+                + "<baseArea>" + this.getBaseArea() + "</baseArea>"
+                + "<lateralArea>" + this.getSideArea() + "</lateralArea>"
+                + "<surfaceArea>" + this.getSurfaceArea() + "</surfaceArea>"
+                + "<innerRadius>" + this.getInnerRadius() + "</innerRadius>"
+                + "<outerRadius>" + this.getOuterRadius() + "</outerRadius>"
+                + "<edgeAngle>" + this.getEdgeAngle() + "</edgeAngle>"
+                + "<slantAngle>" + this.getSlantAngle() + "</slantAngle>"
+                + "<baseAngle>" + this.getBaseAngle() + "</baseAngle>"
+                +  "</Pyramid>";
+        return xml;
+    }
+
+
+    //Printing results to console
+    @Override
+    public void toConsole() {
+        System.out.println("-----Pyramid parameters-----");
+        System.out.println("Number of sides = " + getSides() + " cm");
+        System.out.println("Height of pyramid = " + getHeight() + " cm");
+        System.out.println("Edge height = " + getEdgeHeight() + " cm");
+        System.out.println("Apothem = " + getApothem() + " cm");
+        System.out.println("Volume = " + getVolume() + " cm3");
+        System.out.println("Base perimeter = " + getBasePerimeter());
+        System.out.println("Side perimeter = " + getSidePerimeter());
+        System.out.println("Base Area = " + getBaseArea() + " cm2");
+        System.out.println("Lateral Area = " + getSideArea() + " cm2");
+        System.out.println("Surface Area = " + getSurfaceArea() + " cm2");
+        System.out.println("Inner Radius= " + getInnerRadius() + " cm");
+        System.out.println("Outer Radius = " + getOuterRadius() + " cm");
+        System.out.println("Edge Angle = " + getEdgeAngle() + "°");
+        System.out.println("Slant Angle = " + getSlantAngle() + "°");
+        System.out.println("Base Angle = " + getBaseAngle() + "°");
     }
 
     //Method equals created for checking parameters equality
@@ -145,5 +218,17 @@ public class Pyramid {
     @Override
     public int hashCode() {
         return Objects.hash(getSideA(), getSides(), getHeight());
+    }
+
+    //Interface method for counting pyramid base perimeter
+    @Override
+    public float getBasePerimeter() {
+        return this.getSideA() * this.getSides();
+    }
+
+    //Interface method for counting pyramid side perimeter
+    @Override
+    public float getSidePerimeter() {
+        return this.getSideA() + 2 * (this.getEdgeHeight());
     }
 }

@@ -50,5 +50,15 @@ public class Main {
 
         //Printing the results of calculations
         System.out.println(OutdoorTent);
+
+        //______________________________Task 3. Polymorphism______________________________
+
+        //Calling interface methods
+        System.out.println("\nBase perimeter = " + pyramid.getBasePerimeter()+ "\n");
+        System.out.println("Side perimeter = " + pyramid.getSidePerimeter()+ "\n");
+        //Interface toString method is already called above in Task 1 section
+        System.out.println(pyramid.toJSON() + "\n");
+        System.out.println(pyramid.toXML() + "\n");
+        pyramid.toConsole();
     }
 }
