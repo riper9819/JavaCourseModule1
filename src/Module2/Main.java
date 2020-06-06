@@ -6,7 +6,7 @@ public class Main {
         //Creating new object of class Pyramid
         Pyramid pyramid = new Pyramid();
 
-        //Setting parameters value
+        //Setting parameter values
         pyramid.setSideA(4.5f);
         pyramid.setSides(6);
         pyramid.setHeight(16);
