@@ -15,11 +15,11 @@ public class Pyramid {
     private int sides;
     private float height;
 
-    //Empty constructor
+    //Default empty constructor
     public Pyramid() {
     }
 
-    //Default constructor
+    //Full constructor
     public Pyramid(float sideA, int sides, float height) {
         this.sideA = sideA;
         this.sides = sides;
