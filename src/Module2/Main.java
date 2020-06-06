@@ -1,9 +1,8 @@
 package Module2;
 
 /************************************
-************* Main Class ************
-***   Created by Bohdan Mandych   ***
-************************************/
+ ***   Created by Bohdan Mandych   ***
+ ************************************/
 
 public class Main {
     public static void  main (String[] args){

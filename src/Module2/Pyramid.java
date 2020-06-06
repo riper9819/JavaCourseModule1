@@ -2,13 +2,11 @@ package Module2;
 
 import java.util.Objects;
 
-/****************************************
-***   Class Pyramid is a constructor ****
-***   for counting pyramid parameters  **
-***                                   ***
-*****   Created by Bohdan Mandych   *****
-****************************************/
+/************************************
+ ***   Created by Bohdan Mandych   ***
+ ************************************/
 
+// Class Pyramid is a constructor for counting pyramid parameters
 public class Pyramid {
 
     //Variables declaration
