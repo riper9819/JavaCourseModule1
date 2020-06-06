@@ -6,7 +6,7 @@ import java.util.Objects;
 ***   Created by Bohdan Mandych   ***
 ************************************/
 
-// Class Pyramid is a constructor for counting pyramid parameters
+// Class Pyramid is used for counting pyramid parameters
 public class Pyramid {
 
     //Variables declaration
