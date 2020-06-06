@@ -10,7 +10,6 @@ import java.util.Objects;
 //Child class for Tent.java (Pyramid <- Tent <- OutdoorEquipmentTent)
 //This class represent objects of class Tent, that were sold exclusively by Outdoor Equipment company
 public class OutdoorEquipmentTent extends Tent {
-    public int productID;
     public String usage;
     public String model;
     public int Warranty; //warranty in months
@@ -21,8 +20,7 @@ public class OutdoorEquipmentTent extends Tent {
     }
 
     //Full constructor
-    public OutdoorEquipmentTent(int productID, String usage, String model, int warranty, boolean delivery) {
-        this.productID = productID;
+    public OutdoorEquipmentTent(String usage, String model, int warranty, boolean delivery) {
         this.usage = usage;
         this.model = model;
         this.Warranty = warranty;
@@ -30,9 +28,8 @@ public class OutdoorEquipmentTent extends Tent {
     }
 
     //Full constructor extended with Tent class
-    public OutdoorEquipmentTent(String material, String color, float price, LocalDate purchaseData, boolean mosquitoNet, float mosquitoNetPriceBase, int sleepPlaces, int windows, String rodMaterial, float rodPriceBase, int productID, String usage, String model, int warranty, boolean delivery) {
-        super(material, color, price, purchaseData, mosquitoNet, mosquitoNetPriceBase, sleepPlaces, windows, rodMaterial, rodPriceBase);
-        this.productID = productID;
+    public OutdoorEquipmentTent(int id, String material, String color, float price, LocalDate purchaseData, boolean mosquitoNet, float mosquitoNetPriceBase, int sleepPlaces, int windows, String rodMaterial, float rodPriceBase, String usage, String model, int warranty, boolean delivery) {
+        super(id, material, color, price, purchaseData, mosquitoNet, mosquitoNetPriceBase, sleepPlaces, windows, rodMaterial, rodPriceBase);
         this.usage = usage;
         this.model = model;
         this.Warranty = warranty;
@@ -40,9 +37,8 @@ public class OutdoorEquipmentTent extends Tent {
     }
 
     //Full constructor extended with Pyramid class
-    public OutdoorEquipmentTent(float sideA, int sides, float height, String material, String color, float price, LocalDate purchaseData, boolean mosquitoNet, float mosquitoNetPriceBase, int sleepPlaces, int windows, String rodMaterial, float rodPriceBase, int productID, String usage, String model, int warranty, boolean delivery) {
-        super(sideA, sides, height, material, color, price, purchaseData, mosquitoNet, mosquitoNetPriceBase, sleepPlaces, windows, rodMaterial, rodPriceBase);
-        this.productID = productID;
+    public OutdoorEquipmentTent(float sideA, int sides, float height, int id, String material, String color, float price, LocalDate purchaseData, boolean mosquitoNet, float mosquitoNetPriceBase, int sleepPlaces, int windows, String rodMaterial, float rodPriceBase, String usage, String model, int warranty, boolean delivery) {
+        super(sideA, sides, height, id, material, color, price, purchaseData, mosquitoNet, mosquitoNetPriceBase, sleepPlaces, windows, rodMaterial, rodPriceBase);
         this.usage = usage;
         this.model = model;
         this.Warranty = warranty;
@@ -50,14 +46,6 @@ public class OutdoorEquipmentTent extends Tent {
     }
 
     //Creating getters and setter for all tent parameters
-    public int getProductID() {
-        return productID;
-    }
-
-    public void setProductID(int productID) {
-        this.productID = productID;
-    }
-
     public String getUsage() {
         return usage;
     }
@@ -94,7 +82,7 @@ public class OutdoorEquipmentTent extends Tent {
     @Override
     public String toString() {
         return "\n\n-----Outdoor Equipment Tent-----" +
-                "\n\nProduct ID: " + this.productID +
+                "\n\nProduct ID: " + super.id +
                 "\nModel: " + this.model +
                 "\nPurchase Data: " + super.purchaseData +
                 "\nWarranty till: " + super.getPurchaseData().plusMonths(this.Warranty) +
@@ -104,11 +92,5 @@ public class OutdoorEquipmentTent extends Tent {
                 "\nColor: " + super.color +
                 "\nSize width x height: " + super.getSideA() + " x " + super.getHeight() +
                 "\nPrice: " + super.price;
-    }
-
-    //Hashing id value
-    @Override
-    public int hashCode() {
-        return Objects.hash(productID);
     }
 }

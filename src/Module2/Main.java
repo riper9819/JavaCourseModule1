@@ -25,7 +25,7 @@ public class Main {
         System.out.println("\n\n****************   Inheritance task   ****************");
 
         //Creating new object of class Tent
-        Tent tent = new Tent("Polyester", "Olive", 300.75f, LocalDate.of(2020, 05, 24), true, 1.2f, 3, 2, "Aluminium", 1.25f);
+        Tent tent = new Tent(1, "Polyester", "Olive", 300.75f, LocalDate.of(2020, 05, 24), true, 1.2f, 3, 2, "Aluminium", 1.25f);
 
         //Setting parameter values for tent
         tent.setSideA(3);
@@ -36,9 +36,10 @@ public class Main {
         System.out.println(tent);
 
         //Creating new object of class Tent
-        OutdoorEquipmentTent OutdoorTent = new OutdoorEquipmentTent(1, "Outdoor camping", "Mandiga Arona", 18, true);
+        OutdoorEquipmentTent OutdoorTent = new OutdoorEquipmentTent("Outdoor camping", "Mandiga Arona", 18, true);
 
         //Setting parameter values for Outdoor Equipment tent
+        OutdoorTent.setId(1);
         OutdoorTent.setPurchaseData(LocalDate.of(2020, 05, 24));
         OutdoorTent.setColor("Olive");
         OutdoorTent.setMaterial(" Polyester");
