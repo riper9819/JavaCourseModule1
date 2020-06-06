@@ -3,6 +3,10 @@ package Module2;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
+/************************************
+***   Created by Bohdan Mandych   ***
+************************************/
+
 //Child class for Pyramid.java (Pyramid <- Tent)
 //This class represent objects of class Tent in general
 public class Tent extends Pyramid{

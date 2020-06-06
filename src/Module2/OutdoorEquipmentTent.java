@@ -3,6 +3,10 @@ package Module2;
 import java.time.LocalDate;
 import java.util.Objects;
 
+/************************************
+***   Created by Bohdan Mandych   ***
+************************************/
+
 //Child class for Tent.java (Pyramid <- Tent <- OutdoorEquipmentTent)
 //This class represent objects of class Tent, that were sold exclusively by Outdoor Equipment company
 public class OutdoorEquipmentTent extends Tent {
