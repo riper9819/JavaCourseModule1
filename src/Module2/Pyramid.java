@@ -85,7 +85,7 @@ public class Pyramid {
         return (180 * ((this.sides - 2f) / this.sides));
     }
 
-    //Creating getters and setter for sideA, sides and height parametres
+    //Creating getters and setter for sideA, sides and height parameters
     public float getSideA() {
         return sideA;
     }
