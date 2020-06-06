@@ -2,7 +2,6 @@ package Module2;
 
 import java.time.LocalDate;
 
-
 /************************************
 ***   Created by Bohdan Mandych   ***
 ************************************/

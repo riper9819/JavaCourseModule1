@@ -1,8 +1,6 @@
 package Module2;
 
 import java.time.LocalDate;
-import java.util.Objects;
-
 
 /************************************
 ***   Created by Bohdan Mandych   ***

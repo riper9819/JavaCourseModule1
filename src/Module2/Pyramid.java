@@ -2,7 +2,6 @@ package Module2;
 
 import java.util.Objects;
 
-
 /************************************
 ***   Created by Bohdan Mandych   ***
 ************************************/
