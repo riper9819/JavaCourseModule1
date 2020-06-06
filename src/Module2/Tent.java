@@ -149,19 +149,19 @@ public class Tent extends Pyramid{
     @Override
     public String toString() {
         return  "\n\n-----Tent characteristics-----" +
-                "\n\nMaterial = " + this.material +
-                "\nColor = " + this.color +
-                "\nPrice = " + this.price + " $" +
+                "\n\nMaterial: " + this.material +
+                "\nColor: " + this.color +
+                "\nPrice: " + this.price + " $" +
                 "\nSize width x height: " + super.getSideA() + " x " + super.getHeight() +
-                "\nPurchase data = " + this.purchaseData.format(DateTimeFormatter.ofPattern("dd-MM-yyyy")) +
-                "\nMosquito net = " + (this.mosquitoNet ? "Included" : "Not included") +
-                "\nMosquito net price per m2 = " + this.mosquitoNetPriceBase + " $" +
-                "\nSleep places = " + this.sleepPlaces +
-                "\nWindows = " + this.windows +
-                "\nRod material = " + this.rodMaterial +
-                "\nRod price base per m2 = " + this.rodPriceBase + " $" +
-                "\nCounted rod price = " + String.format("%.2f", getRodPrice()) + " $" +
-                "\nCounted net price = " + String.format("%.2f", getNetPrice()) + " $" +
-                "\nPlace per one person avaliable = " + getPlacePerPerson() + " m2";
+                "\nPurchase data: " + this.purchaseData.format(DateTimeFormatter.ofPattern("dd-MM-yyyy")) +
+                "\nMosquito net: " + (this.mosquitoNet ? "Included" : "Not included") +
+                "\nMosquito net price per m2: " + this.mosquitoNetPriceBase + " $" +
+                "\nSleep places: " + this.sleepPlaces +
+                "\nWindows: " + this.windows +
+                "\nRod material: " + this.rodMaterial +
+                "\nRod price base per m2: " + this.rodPriceBase + " $" +
+                "\nCounted rod price: " + String.format("%.2f", getRodPrice()) + " $" +
+                "\nCounted net price: " + String.format("%.2f", getNetPrice()) + " $" +
+                "\nPlace per one person avaliable: " + getPlacePerPerson() + " m2";
     }
 }
