@@ -113,7 +113,7 @@ public class Pyramid {
     //Creating toString method for all counted results
     @Override
     public String toString() {
-        return  "-----Pyramid parametres-----" +
+        return  "-----Pyramid parameters-----" +
                 "\n\nSide a = " + this.sideA + " cm" +
                 "\nNumber of sides = " + this.sides + " cm" +
                 "\nHeight of pyramid = " + this.height + " cm" +
