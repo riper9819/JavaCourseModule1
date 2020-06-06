@@ -3,8 +3,8 @@ package Module2;
 import java.util.Objects;
 
 /************************************
- ***   Created by Bohdan Mandych   ***
- ************************************/
+***   Created by Bohdan Mandych   ***
+************************************/
 
 // Class Pyramid is a constructor for counting pyramid parameters
 public class Pyramid {
