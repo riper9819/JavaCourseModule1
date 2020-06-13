@@ -29,6 +29,6 @@ public class PyramidFactory {
         //When input parameters are bigger then 0 return new Pyramid object, else return Exception
         if(sideA > 0 & sides > 0 & height > 0 ){
             return new Pyramid(sideA, sides, height);
-        }else throw new IllegalArgumentException("You put wrong arguments in method");
+        }else throw new IllegalArgumentException("You put wrong arguments");
     }
 }
