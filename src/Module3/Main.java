@@ -9,10 +9,10 @@
  *
  * Description:
     JavaCollectionsFramework. List.
-    1. Create ArrayList and LinkedList containing  100 000 Integer elements. Compare time intervals.
-    2. Insert new 1000 elements  on the  beginning, on  the middle  and on the end of ones. Compare time intervals.
-    3. Update 1000 elements  from the  beginning, from  the middle  and from the end of ones. Compare time intervals.
-    4. Delete 1000 elements  from the  beginning, from  the middle  and from the end of ones. Compare time intervals.
+    1. Create ArrayList and LinkedList containing 100 000 Integer elements. Compare time intervals.
+    2. Insert new 1000 elements on the beginning, on the middle and on the end of ones. Compare time intervals.
+    3. Update 1000 elements from the beginning, from the middle and from the end of ones. Compare time intervals.
+    4. Delete 1000 elements from the beginning, from the middle and from the end of ones. Compare time intervals.
  */
 
 package Module3;
@@ -23,14 +23,16 @@ import java.util.List;
 
 //Main class for all module tasks
 public class Main {
+
+    private static int arrayPoints = 0; //point counter for ArrayList time interval wins
+    private static int linkedPoints = 0; //point counter for ArrayList time interval wins
+
     public static void main(String[] args) {
         //------------------------Creating Array and Linked List------------------------
         System.out.println("1. Creating Array and Linked List");
         List <Integer> integersArray = new ArrayList<>(); //creating empty ArrayList
         List <Integer> integersLinked = new LinkedList<>(); //creating empty LinkedList
-        int arrayPoints = 0; //point counter for ArrayList time interval wins
-        int linkedPoints = 0; //point counter for ArrayList time interval wins
-        String result = "LinkedList is faster"; //this string used in if condition of time interval comparison
+        String result; //this string used in if condition of time interval comparison
 
         float resultArray = fillArray(integersArray); //filling ArrayList with elements
         System.out.println("For ArrayList that took " + resultArray + " seconds");
@@ -38,13 +40,8 @@ public class Main {
         System.out.println("For LinkedList that took " + resultLinked + " seconds");
 
         //comparing time interval results for ArrayList and LinkedList
-        float compare =  resultArray - resultLinked;
         //adding points for a winner and showing results
-        if (compare<0){
-            result = "ArrayList is faster";
-            arrayPoints++;
-        } else linkedPoints++;
-        System.out.println(result);
+        System.out.println(compareTime(resultArray, resultLinked));
 
         //-------------------Inserting on the beginning of Array and Linked List-------------------
         System.out.println("\n2.1. Inserting on the beginning of Array and Linked List");
@@ -53,14 +50,10 @@ public class Main {
         resultLinked = insertOnBeginning(integersLinked);//inserting elements on the beginning of LinkedList
         System.out.println("For LinkedList that took " + resultLinked + " seconds");
 
+
         //comparing time interval results for ArrayList and LinkedList
-        compare =  resultArray - resultLinked;
         //adding points for a winner and showing results
-        if (compare<0){
-            result = "ArrayList is faster";
-            arrayPoints++;
-        } else linkedPoints++;
-        System.out.println(result);
+        System.out.println(compareTime(resultArray, resultLinked));
 
         //-------------------Inserting on the middle of Array and Linked List-------------------
         System.out.println("\n2.2. Inserting on the middle of Array and Linked List");
@@ -70,13 +63,8 @@ public class Main {
         System.out.println("For LinkedList that took " + resultLinked + " seconds");
 
         //comparing time interval results for ArrayList and LinkedList
-        compare =  resultArray - resultLinked;
         //adding points for a winner and showing results
-        if (compare<0){
-            result = "ArrayList is faster";
-            arrayPoints++;
-        } else linkedPoints++;
-        System.out.println(result);
+        System.out.println(compareTime(resultArray, resultLinked));
 
         //-------------------Inserting on the end of Array and Linked List-------------------
         System.out.println("\n2.3. Inserting on the end of Array and Linked List");
@@ -86,13 +74,8 @@ public class Main {
         System.out.println("For LinkedList that took " + resultLinked + " seconds");
 
         //comparing time interval results for ArrayList and LinkedList
-        compare =  resultArray - resultLinked;
         //adding points for a winner and showing results
-        if (compare<0){
-            result = "ArrayList is faster";
-            arrayPoints++;
-        } else linkedPoints++;
-        System.out.println(result);
+        System.out.println(compareTime(resultArray, resultLinked));
 
         //-------------------Updating elements from the beginning of Array and Linked List-------------------
         System.out.println("\n3.1. Updating elements from the beginning of Array and Linked List");
@@ -102,13 +85,8 @@ public class Main {
         System.out.println("For LinkedList that took " + resultLinked + " seconds");
 
         //comparing time interval results for ArrayList and LinkedList
-        compare =  resultArray - resultLinked;
         //adding points for a winner and showing results
-        if (compare<0){
-            result = "ArrayList is faster";
-            arrayPoints++;
-        } else linkedPoints++;
-        System.out.println(result);
+        System.out.println(compareTime(resultArray, resultLinked));
 
         //-------------------Updating elements from the middle of Array and Linked List-------------------
         System.out.println("\n3.2. Updating elements from the middle of Array and Linked List");
@@ -118,13 +96,8 @@ public class Main {
         System.out.println("For LinkedList that took " + resultLinked + " seconds");
 
         //comparing time interval results for ArrayList and LinkedList
-        compare =  resultArray - resultLinked;
         //adding points for a winner and showing results
-        if (compare<0){
-            result = "ArrayList is faster";
-            arrayPoints++;
-        } else linkedPoints++;
-        System.out.println(result);
+        System.out.println(compareTime(resultArray, resultLinked));
 
         //-------------------Updating elements from the end of Array and Linked List-------------------
         System.out.println("\n3.3. Updating elements from the end of Array and Linked List");
@@ -134,13 +107,8 @@ public class Main {
         System.out.println("For LinkedList that took " + resultLinked + " seconds");
 
         //comparing time interval results for ArrayList and LinkedList
-        compare =  resultArray - resultLinked;
         //adding points for a winner and showing results
-        if (compare<0){
-            result = "ArrayList is faster";
-            arrayPoints++;
-        } else linkedPoints++;
-        System.out.println(result);
+        System.out.println(compareTime(resultArray, resultLinked));
 
         //-------------------Deleting elements from the beginning of Array and Linked List-------------------
         System.out.println("\n4.1. Deleting elements from the beginning of Array and Linked List");
@@ -150,13 +118,8 @@ public class Main {
         System.out.println("For LinkedList that took " + resultLinked + " seconds");
 
         //comparing time interval results for ArrayList and LinkedList
-        compare =  resultArray - resultLinked;
         //adding points for a winner and showing results
-        if (compare<0){
-            result = "ArrayList is faster";
-            arrayPoints++;
-        } else linkedPoints++;
-        System.out.println(result);
+        System.out.println(compareTime(resultArray, resultLinked));
 
         //-------------------Deleting elements from the middle of Array and Linked List-------------------
         System.out.println("\n4.2. Deleting elements from the middle of Array and Linked List");
@@ -166,13 +129,8 @@ public class Main {
         System.out.println("For LinkedList that took " + resultLinked + " seconds");
 
         //comparing time interval results for ArrayList and LinkedList
-        compare =  resultArray - resultLinked;
         //adding points for a winner and showing results
-        if (compare<0){
-            result = "ArrayList is faster";
-            arrayPoints++;
-        } else linkedPoints++;
-        System.out.println(result);
+        System.out.println(compareTime(resultArray, resultLinked));
 
         //-------------------Deleting elements from the end of Array and Linked List-------------------
         System.out.println("\n4.3. Deleting elements from the end of Array and Linked List");
@@ -182,19 +140,14 @@ public class Main {
         System.out.println("For LinkedList that took " + resultLinked + " seconds");
 
         //comparing time interval results for ArrayList and LinkedList
-        compare =  resultArray - resultLinked;
         //adding points for a winner and showing results
-        if (compare<0){
-            result = "ArrayList is faster";
-            arrayPoints++;
-        } else linkedPoints++;
-        System.out.println(result);
+        System.out.println(compareTime(resultArray, resultLinked));
 
         //printing point results of List comparison and showing the winner
         System.out.println("----------Results of comparison----------");
         System.out.println("\nArrayList has " + arrayPoints + " points." +
                            "\nLinkedList has " + linkedPoints + " points.");
-        System.out.println("\nThe winner is: " + (linkedPoints > arrayPoints ? "LinkedList" : "ArrayList"));
+        System.out.println("\nThe winner is: " + (linkedPoints == arrayPoints ? "It's a draw" : (linkedPoints > arrayPoints ? "LinkedList" : "ArrayList")));
     }
 
     /**
@@ -341,5 +294,22 @@ public class Main {
         }
         float endTime = System.nanoTime();
         return (endTime - startTime)/1_000_000_000;
+    }
+
+    /**
+     * Method to compare execution time for ArrayList and LinkedList and add points to winner.
+     * @param resultArray Takes as parameter measured time of ArrayList execution
+     * @param resultLinked Takes as parameter measured time of LinkedList execution
+     * @return Returns counted execution time
+     */
+    static String compareTime(float resultArray, float resultLinked){
+        float compare = resultArray - resultLinked;
+        if (compare<=0){
+            if (compare==0) return "No one is faster!";
+            arrayPoints++;
+            return "ArrayList is faster";
+        } else {
+            linkedPoints++;
+            return "LinkedList is faster";}
     }
 }
