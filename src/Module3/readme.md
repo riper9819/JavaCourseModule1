@@ -9,4 +9,4 @@
 This program contains methods for filling, inserting, updating and deleting elements from ArrayList and LinkedList.
 All methods also do execution time measurement. Each of them returns the value of measured execution time.
 
-##All results can be seen in Main.java class.
+## All results can be seen in Main.java class.
