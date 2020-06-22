@@ -13,6 +13,7 @@ This program contains methods for filling, inserting, updating and deleting elem
 All methods also do execution time measurement. Each of them returns the value of measured execution time.
 
 ### Results of comparison.
+```
 1.1. Creating Array and Linked List\
 For ArrayList that took 0.1006633 seconds\
 For LinkedList that took 0.16777216 seconds
@@ -62,6 +63,7 @@ LinkedList is faster
 For ArrayList that took 0.0 seconds\
 For LinkedList that took 0.016777216 seconds\
 ArrayList is faster
+```
 
 <b>Results of comparison</b>
 
