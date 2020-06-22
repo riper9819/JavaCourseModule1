@@ -85,4 +85,4 @@ This program contains 3 classes:
 1. Class Cafe.java is main class of the program.
 2. Class Customer.java contains Customer object constructor and customer methods.
 3. Class Meal.java contains Meal object constructor and meal methods.
-All methods also do execution time measurement. Each of them returns the value of measured execution time.
+4. Class IMeal contains Meal object methods.

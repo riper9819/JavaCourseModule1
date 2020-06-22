@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
-public class Meal {
+public class Meal implements IMeal {
     int mealID; //meal ID number
     String name; //meal name
     float price; //meal price
