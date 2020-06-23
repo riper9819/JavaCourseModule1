@@ -21,6 +21,8 @@ This class has solutions for all task items.\
 It does glossary word filtering, counting of distinct word and name occurrences and performs file operations.\
 First 20 pairs of distinct names occurrences are saved to "Harry names occurrence.txt" file.
 
+### Diagram of armed forces branches
+![alt text](https://github.com/riper9819/JavaCourseModule1/scr/FinalCourseTask/Armed_forces_branches_diagram.jpg?raw=true)
 
 ### Results of comparison.
 ```
