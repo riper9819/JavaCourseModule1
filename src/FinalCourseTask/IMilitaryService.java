@@ -1,3 +1,22 @@
+/*
+ * Class name: IMilitaryService
+ *
+ * @version 1.0
+ *
+ * 23-Jun-2020
+ *
+ * @author Bohdan Mandych
+ *
+ * Description:
+    IMilitaryService.java is an interface that contains methods for parent and personnel  operations.
+
+    IMPLEMENT THE FOLLOWING INTERFACE.
+
+    public class Company
+    public interface ICompanyService
+    long getEmployeeCountForCompanyAndChildren(Company company, List<Company> companies);
+ */
+
 package FinalCourseTask;
 
 import java.util.List;
