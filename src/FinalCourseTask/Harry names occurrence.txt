@@ -1,0 +1,22 @@
+Word: "Harry" occurred: 1212 times
+Word: "Hagrid" occurred: 336 times
+Word: "Hermione" occurred: 257 times
+Word: "Professor" occurred: 180 times
+Word: "Snape" occurred: 145 times
+Word: "Dumbledore" occurred: 139 times
+Word: "Dudley" occurred: 115 times
+Word: "Malfoy" occurred: 109 times
+Word: "Vernon" occurred: 105 times
+Word: "Neville" occurred: 102 times
+Word: "McGonagall" occurred: 95 times
+Word: "Potter" occurred: 92 times
+Word: "Quirrell" occurred: 90 times
+Word: "Gryffindor" occurred: 81 times
+Word: "Hogwarts" occurred: 76 times
+Word: "Quidditch" occurred: 58 times
+Word: "Petunia" occurred: 57 times
+Word: "Dursley" occurred: 52 times
+Word: "Slytherin" occurred: 48 times
+Word: "Weasley" occurred: 47 times
+
+https://github.com/riper9819/JavaCourseModule1/tree/master/src/FinalCourseTask
