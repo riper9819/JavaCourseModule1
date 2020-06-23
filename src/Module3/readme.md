@@ -8,9 +8,9 @@
 4. Delete 1000 elements from the beginning, from the middle  and from the end of ones. Compare time intervals.
 
 ### Task solution
-Class Main.java is the main class of the program.
-This program contains methods for filling, inserting, updating and deleting elements from ArrayList and LinkedList.\
-All methods also do execution time measurement. Each of them returns the value of measured execution time.
+Class Main.java is the main class of the program.\
+This class has solutions for all task items.\
+It does glossary 
 
 ### Results of comparison.
 ```
@@ -81,7 +81,7 @@ Six methods must be written like in the following example. A point for each one.
 Subject: Cafe - standard lunch and ordering.
 
 ### Laboratory work solution
-This program contains 3 classes:
+This program contains 4 classes:
 1. Class Cafe.java is main class of the program.
 2. Class Customer.java contains Customer object constructor and customer methods.
 3. Class Meal.java contains Meal object constructor and meal methods.

@@ -18,5 +18,3 @@ Word: "Petunia" occurred: 57 times
 Word: "Dursley" occurred: 52 times
 Word: "Slytherin" occurred: 48 times
 Word: "Weasley" occurred: 47 times
-
-https://github.com/riper9819/JavaCourseModule1/tree/master/src/FinalCourseTask

@@ -48,6 +48,7 @@ public class Glossary {
                 replaceAll("[%,;()?!@:�№\"[0-9]]", "").
                 replaceAll("--", "").
                 replaceAll("- ", "");
+        System.out.println("-------------Counting distinct words occurrence-------------");
 
         //creating array of words
         String[] words = text.replaceAll("\\.", " ").

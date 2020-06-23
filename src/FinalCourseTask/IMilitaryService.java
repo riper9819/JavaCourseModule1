@@ -8,7 +8,7 @@
  * @author Bohdan Mandych
  *
  * Description:
-    IMilitaryService.java is an interface that contains methods for parent and personnel  operations.
+    IMilitaryService.java is an interface, that contains methods for parent and personnel operations.
 
     IMPLEMENT THE FOLLOWING INTERFACE.
 
