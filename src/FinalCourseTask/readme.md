@@ -22,7 +22,7 @@ It does glossary word filtering, counting of distinct word and name occurrences 
 First 20 pairs of distinct names occurrences are saved to "Harry names occurrence.txt" file.
 
 ### Diagram of armed forces branches
-![Screenshot](https://github.com/riper9819/JavaCourseModule1/blob/master/src/FinalCourseTask/Armed_forces_branches_diagram.png)
+
 
 ### Results of comparison.
 ```
