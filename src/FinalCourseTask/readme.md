@@ -18,7 +18,9 @@ Show all your skills and experience.  All the tricks will be taken into account.
 ### Task solution
 Class Glossary.java is the main class of the program.\
 This class has solutions for all task items.\
-It does glossary word filtering, counting of distinct word and name occurrences and performs file operations.
+It does glossary word filtering, counting of distinct word and name occurrences and performs file operations.\
+First 20 pairs of distinct words occurences are saved to "Harry names occurrence.txt" file.
+
 
 ### Results of comparison.
 ```
