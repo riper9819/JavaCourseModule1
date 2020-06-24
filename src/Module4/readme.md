@@ -1,4 +1,5 @@
 # Module 4
+In this module I used BufferedReader instead of strings, since the latter were causing OutOfMemoryError due to low performance of my system.
 
 ## Task 1 Files management.
 
