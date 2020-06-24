@@ -10,7 +10,6 @@
 ### Task solution
 Class Main.java is the main class of the program.\
 This class has solutions for all task items.\
-It does glossary 
 
 ### Results of comparison.
 ```
