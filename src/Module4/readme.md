@@ -40,7 +40,7 @@ Parsing log file with stream filtering was faster!
 This program contains 2 classes and 1 interface:
 1. Class Main.java is main class of the program.
 2. Class LogsManagerServiceImpl.java contains log file parsing methods.
-3. LogsManagerService.java is an interface that needs to be implemented for log file management.
+3. ILogsManagerService.java is an interface that needs to be implemented for log file management.
 
 ### List of log files
 ERROR events

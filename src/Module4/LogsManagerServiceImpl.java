@@ -43,8 +43,8 @@ import java.time.temporal.ChronoUnit;
         /**
          * Method to write to a file specific log by type and date
          * @param date String representation of date
-         * @param logError String type that is type of log (ERROR, WARNING, INFO)
-         * @param path String type that is type of log (ERROR, WARNING, INFO)
+         * @param logError String type that is type of log event (ERROR, WARNING, INFO)
+         * @param path String type that contains file path
          * @throws IOException Throws exception if file is invalid
          */
         @Override

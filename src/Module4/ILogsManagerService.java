@@ -36,6 +36,7 @@ public interface ILogsManagerService {
      * Method to write to a txt file log specified by event type and date
      * @param date String representation of date
      * @param logError String type that is type of log event (ERROR, WARNING, INFO)
+     * @param path String type that contains file path
      * @throws IOException Throws exception if file is invalid
      */
 
