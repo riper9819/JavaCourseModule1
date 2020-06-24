@@ -1,5 +1,5 @@
 /*
- * Class name: LogFileExtractor
+ * Class name: LogManagerServiceImpl
  *
  * @version 1.0
  *

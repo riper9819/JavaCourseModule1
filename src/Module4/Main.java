@@ -1,5 +1,5 @@
 /*
- * Class name: LogFileExtractor
+ * Class name: Main
  *
  * @version 1.0
  *
