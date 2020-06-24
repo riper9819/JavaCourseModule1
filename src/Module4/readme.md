@@ -1,4 +1,4 @@
-# Module 3
+# Module 4
 
 ## Task 1 Files management.
 
@@ -8,7 +8,7 @@
 4. Calculate the total number of ERROR logs. Use Files.lines.
 5. Compare two results.
 
-### Task solution
+### Task 1 solution
 Class LogFileExtractor.java performs log file event lines extraction and analyzing.\
 On each step there is an execution time measurement.
 
@@ -26,17 +26,58 @@ Parsing log file with stream filtering took 2087 ms
 Parsing log file with stream filtering was faster!
 ```
 
-## Laboratory work 2
+## Task 2 Multithreading
 
-Laboratory work 2. Object-oriented programming. JavaCollectionFramework.\
-Choose a subject according to your number. Develop a service using all your best in OOP and Java collections.\
-Six methods must be written like in the following example. A point for each one.
+1. Use the file from the previous task - logs.txt.
+2. Create a class, that manages logs in this file.
+3. Create a method that finds all the ERROR logs for a specific date and write them into a specific file (name = ERROR  + Date  + .log).
+4. In your main class develop a functionality to create  5 such a files for 5 different days. Launch them in consistent way (one after another).
+5. Repeat the above  task in parallel way. Multi-threading.
+6. Compare the results.
 
-Subject: Cafe - standard lunch and ordering.
+### Task 2 solution
+This program contains 2 classes and 1 interface:
+1. Class Main.java is main class of the program.
+2. Class LogsManagerServiceImpl.java contains log file parsing methods.
+3. LogsManagerService.java is an interface that needs to be implemented for log file management.
 
-### Laboratory work solution
-This program contains 4 classes:
-1. Class Cafe.java is main class of the program.
-2. Class Customer.java contains Customer object constructor and customer methods.
-3. Class Meal.java contains Meal object constructor and meal methods.
-4. Class IMeal contains Meal object methods.
+### Results of log file parsing by consistent and multithreading ways.
+```
+--------------Consistent Log File Parsing------------------
+
+Parsing log file for date 2019-12 took - 3427 ms
+ERROR event lines in log file for date 2019-12 - 26
+
+Parsing log file for date 2019-11 took - 1837 ms
+ERROR event lines in log file for date 2019-11 - 50
+
+Parsing log file for date 2019-10 took - 1517 ms
+ERROR event lines in log file for date 2019-10 - 29
+
+Parsing log file for date 2020-01 took - 1721 ms
+ERROR event lines in log file for date 2020-01 - 129
+
+Parsing log file for date 2020-02 took - 1508 ms
+ERROR event lines in log file for date 2020-02 - 119
+
+-------------Multithreading Log File Parsing------------------
+
+Parsing log file for date 2020-01 took - 4221 ms
+WARN event lines in log file for date 2020-01 - 52980
+
+Parsing log file for date 2019-10 took - 4357 ms
+WARN event lines in log file for date 2019-10 - 34778
+
+Parsing log file for date 2019-12 took - 4444 ms
+WARN event lines in log file for date 2019-12 - 71011
+
+Parsing log file for date 2019-11 took - 4457 ms
+WARN event lines in log file for date 2019-11 - 34911
+
+Parsing log file for date 2020-02 took - 4488 ms
+WARN event lines in log file for date 2020-02 - 55235
+
+Parsing log file in consistent way took: 10036 ms
+Parsing log file with multithreading took: 0 ms
+Multithreading parsing is faster!
+```

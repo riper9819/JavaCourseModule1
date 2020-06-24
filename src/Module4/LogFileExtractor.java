@@ -10,11 +10,13 @@
  * Description:
     LogFileExtractor.java is a class used for log file parsing
 
-    IMPLEMENT THE FOLLOWING INTERFACE.
+    Files management
 
-    public class Company
-    public interface ICompanyService
-    long getEmployeeCountForCompanyAndChildren(Company company, List<Company> companies);
+    1. Parse the file logs.txt (see the attachment).  Extract to a separate file all the logs.
+    2. Calculate the total number of logs (lines).
+    3. Calculate the total  number of  ERROR logs. Use previous skills - String.split
+    4.  Calculate the total number of ERROR logs. Use Files.lines.
+    5. Compare two results.
  */
 
 package Module4;
@@ -27,6 +29,11 @@ import java.nio.file.Paths;
 import java.io.BufferedReader;
 import java.nio.charset.StandardCharsets;
 
+/**
+ * LogFileExtractor class
+ * @author Bohdan Mandych
+ * @version 1.0 24-Jun-2020
+ */
 public class LogFileExtractor {
     public static void main(String[] args) throws IOException {
         //----------------------Parsing log file with BufferedReader----------------------
@@ -60,7 +67,7 @@ public class LogFileExtractor {
         //Finish time mark
         LocalDateTime finish = LocalDateTime.now();
 
-        //Counting time difference
+        //Counting execution time
         long bufferTime = ChronoUnit.MILLIS.between(start, finish);
 
         //Printing counted execution time
@@ -83,7 +90,7 @@ public class LogFileExtractor {
         //Finish time mark
         finish = LocalDateTime.now();
 
-        //Counting time execution
+        //Counting execution time
         long filterTime = ChronoUnit.MILLIS.between(start, finish);
 
         //Printing counted execution time
