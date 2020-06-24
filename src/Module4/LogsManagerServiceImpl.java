@@ -57,7 +57,7 @@ import java.time.temporal.ChronoUnit;
             LocalDateTime start = LocalDateTime.now();
 
             //Declaring and initializing file variable
-            FileWriter logFile = new FileWriter(new File("src/Module4/",logError +
+            FileWriter logFile = new FileWriter(new File("src/Module4/LogFiles",logError +
                     "_" + date + ".log"));
 
             String lineBuffer; //line for comparison
