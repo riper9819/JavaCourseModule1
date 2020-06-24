@@ -93,6 +93,6 @@ public class LogFileExtractor {
         System.out.println((bufferTime - filterTime) > 0 ? "\nParsing log file with stream filtering was faster!" : "\nParsing log file with BufferedReader was faster!");
 
         //Writing error lines to new file
-        Files.write(Paths.get("src/Module4/logsNew1.txt"), errorLine.getBytes());
+        Files.write(Paths.get("src/Module4/logsNew.txt"), errorLine.getBytes());
     }
 }
