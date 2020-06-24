@@ -41,6 +41,25 @@ This program contains 2 classes and 1 interface:
 2. Class LogsManagerServiceImpl.java contains log file parsing methods.
 3. LogsManagerService.java is an interface that needs to be implemented for log file management.
 
+### List of log files
+ERROR events
+```
+ERROR_2019-10
+ERROR_2019-11
+ERROR_2019-12
+ERROR_2020-01
+ERROR_2020-02
+```
+WARN events
+
+```
+WARN_2019-10
+WARN_2019-11
+WARN_2019-12
+WARN_2020-01
+WARN_2020-02
+```
+
 ### Results of log file parsing by consistent and multithreading ways.
 ```
 --------------Consistent Log File Parsing------------------
