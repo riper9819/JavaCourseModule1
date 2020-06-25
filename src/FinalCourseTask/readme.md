@@ -115,6 +115,6 @@ public interface ICompanyService {
 ### Task solution
 This program contains 3 classes and 1 interface:
 1. Army.java is a main class of task.
-2. ArmedForces.java is a class contains armed forces branches constructors and methods.
+2. ArmedForces.java is a class, that contains armed forces branches constructors and methods.
 3. MilitaryServiceIMP.java is a class, that implements IMilitaryService interface methods.
-4. IMilitaryService.java is an interface that contains methods for parent and personnel operations.
+4. IMilitaryService.java is an interface, that contains methods for parent and personnel operations.
